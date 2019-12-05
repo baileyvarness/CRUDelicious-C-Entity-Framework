@@ -1,0 +1,34 @@
+﻿
+<div class="container">
+  <div class="row">
+    <div class="col text-center">
+      <h1>Welcome to CRUDelicious</h1>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-5">
+        <h3>Check out some recent dishes!</h3>
+        <hr>
+        @foreach(var dish in Model){
+        <p><a href="@dish.DishId">@dish.Name</a> by @dish.Chef</p>
+        
+        }
+    </div>
+    <div class="col">
+    </div>
+    <div class="col">
+    </div>
+    <div class="col">
+      <a asp-action="NewDish">Add a Dish</a>
+    </div>
+  </div>
+</div>
+
+
+ 
